@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Classifier</title>
+</head>
+<body>
+  <h2>Iris Flower Classifier 🌸</h2>
+  <form method="POST">
+    <input name="sepal_length" placeholder="Sepal Length">
+    <input name="sepal_width" placeholder="Sepal Width">
+    <input name="petal_length" placeholder="Petal Length">
+    <input name="petal_width" placeholder="Petal Width">
+    <button type="submit">Predict</button>
+  </form>
+  {% if prediction is not none %}
+    <h3>Prediction: {{ prediction }}</h3>
+  {% endif %}
+</body>
+</html>
